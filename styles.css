@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.water_top {
+    position: absolute;
+    top: 190px;
+    left: 4px;
+}
+
+.static-img {
+    position: relative;
+    background-color: #222569;
+}
