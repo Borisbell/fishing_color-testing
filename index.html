@@ -9,10 +9,19 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-    <div class="static-img">
-        <img src="Sosed_fishing+teeth.svg">
-        <img src="water_top.svg" class="water_top">
-    </div>
-    <lottie-player src="fishing_egg+teeth.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
+    <div class="wrapper">  
+        <div class="static-img">
+            <img src="Sosed_fishing+teeth.svg">
+            <img src="water_top.svg" class="water_top">
+        </div>
+        <lottie-player src="fishing_egg+teeth.json" class="player" background="transparent" speed="1" style="width: 300px ;height: 276px" loop="" autoplay="">
+        </lottie-player>
+        <button class="hide-lottie">Скрыть Лотти</button>
+    </div>   
+    <script>
+        const button = document.querySelector(".hide-lottie");
+        const animation = document.querySelector(".player");
+        button.addEventListener("click", () => animation.classList.toggle("player_hidden"));
+    </script>
 </body>
 </html>

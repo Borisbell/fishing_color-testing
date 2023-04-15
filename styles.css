@@ -13,3 +13,18 @@
     position: relative;
     background-color: #222569;
 }
+
+.wrapper {
+    position: relative;
+    width:300px;
+}
+
+.player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.player_hidden {
+    display: none;
+}
